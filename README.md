@@ -3,7 +3,8 @@
 Primeira interface web da Biblioteca Digital UniFECAF, desenvolvida para a disciplina **Design Web**.
 O site transforma o protótipo de baixa fidelidade fornecido pela instituição em uma página responsiva e acessível, feita apenas com **HTML e CSS**.
 
-- **Site publicado:** COLE_AQUI_O_LINK_DO_GITHUB_PAGES
+- **Site publicado:** https://gustav0325.github.io/biblioteca-unifecaf/
+- **Repositório:** https://github.com/gustav0325/biblioteca-unifecaf
 - **Vídeo pitch:** COLE_AQUI_O_LINK_DO_YOUTUBE
 
 ## Estrutura
