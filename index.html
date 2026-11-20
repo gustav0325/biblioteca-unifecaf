@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Biblioteca Digital UniFECAF: acervo de livros, periódicos e serviços de apoio à aprendizagem para os estudantes.">
+  <meta name="theme-color" content="#1A3666">
+  <title>Biblioteca Digital UniFECAF</title>
+  <link rel="icon" href="assets/imagens/livro-1.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Link de acessibilidade: permite pular o menu usando o teclado -->
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===================== CABEÇALHO / NAVEGAÇÃO ===================== -->
+  <header class="cabecalho">
+    <div class="container cabecalho__interno">
+      <a class="logo" href="#inicio" aria-label="Biblioteca Digital UniFECAF, voltar ao início">
+        <span class="logo__icone" aria-hidden="true"></span>
+        <span class="logo__texto">Biblioteca <strong>UniFECAF</strong></span>
+      </a>
+
+      <!-- Menu mobile feito só com CSS: o checkbox guarda o estado aberto/fechado -->
+      <input class="menu__controle" type="checkbox" id="menu-toggle">
+      <label class="menu__botao" for="menu-toggle" aria-label="Abrir ou fechar o menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="menu" aria-label="Menu principal">
+        <ul class="menu__lista">
+          <li><a class="menu__link menu__link--ativo" href="#sobre">Biblioteca</a></li>
+          <li><a class="menu__link" href="#livros">Livros</a></li>
+          <li><a class="menu__link" href="#unidades">Unidades</a></li>
+          <li><a class="menu__link" href="#contatos">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ===================== BANNER PRINCIPAL (HERO) ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero__conteudo">
+        <p class="hero__selo">Acervo aberto 24 horas</p>
+        <h1 id="hero-titulo" class="hero__titulo">Seu conhecimento começa aqui.</h1>
+        <p class="hero__texto">
+          Livros, artigos e materiais de apoio reunidos em um só lugar, para você estudar
+          quando e onde quiser.
+        </p>
+        <div class="hero__acoes">
+          <a class="botao botao--destaque" href="#livros">Explorar livros</a>
+          <a class="botao botao--contorno" href="#sobre">Conhecer a biblioteca</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE A BIBLIOTECA ===================== -->
+    <section class="secao secao--escura" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <h2 id="sobre-titulo" class="titulo-secao">Sobre a nossa biblioteca</h2>
+
+        <div class="sobre">
+          <p class="sobre__texto">
+            A Biblioteca Digital UniFECAF nasceu para aproximar o estudante do conhecimento.
+            Aqui você encontra obras de referência dos seus cursos, clássicos da literatura e
+            materiais complementares indicados pelos professores, tudo acessível pelo
+            computador ou pelo celular.
+          </p>
+
+          <figure class="sobre__figura">
+            <img src="assets/imagens/sobre.svg" alt="Ilustração de um livro aberto ao lado de um tablet com um texto na tela" width="600" height="400">
+          </figure>
+
+          <p class="sobre__texto">
+            O acervo é organizado por áreas do conhecimento e atualizado a cada semestre.
+            Além da leitura on-line, oferecemos orientação para pesquisas, normalização de
+            trabalhos acadêmicos e espaços de estudo nas unidades presenciais.
+          </p>
+        </div>
+
+        <!-- Quatro serviços em destaque (as quatro imagens menores do protótipo) -->
+        <ul class="servicos">
+          <li class="servico">
+            <img src="assets/imagens/servico-acervo.svg" alt="" width="400" height="300">
+            <h3 class="servico__titulo">Acervo digital</h3>
+          </li>
+          <li class="servico">
+            <img src="assets/imagens/servico-periodicos.svg" alt="" width="400" height="300">
+            <h3 class="servico__titulo">Periódicos e artigos</h3>
+          </li>
+          <li class="servico">
+            <img src="assets/imagens/servico-estudo.svg" alt="" width="400" height="300">
+            <h3 class="servico__titulo">Salas de estudo</h3>
+          </li>
+          <li class="servico">
+            <img src="assets/imagens/servico-atendimento.svg" alt="" width="400" height="300">
+            <h3 class="servico__titulo">Apoio à pesquisa</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== BANNER INTERMEDIÁRIO ===================== -->
+    <section class="faixa" aria-label="Mensagem da biblioteca">
+      <div class="container faixa__conteudo">
+        <blockquote class="faixa__citacao">
+          <p>“Ler é estudar com a curiosidade ligada.”</p>
+        </blockquote>
+        <p class="faixa__texto">Mais de 10 mil títulos disponíveis para consulta on-line.</p>
+      </div>
+    </section>
+
+    <!-- ===================== NOSSOS LIVROS ===================== -->
+    <section class="secao secao--azul" id="livros" aria-labelledby="livros-titulo">
+      <div class="container">
+        <h2 id="livros-titulo" class="titulo-secao">Nossos livros</h2>
+
+        <div class="livros">
+          <article class="livro">
+            <h3 class="livro__nome">Dom Casmurro</h3>
+            <img class="livro__capa" src="assets/imagens/livro-1.svg" alt="Capa ilustrativa de Dom Casmurro" width="300" height="420">
+            <p class="livro__categoria">Literatura brasileira</p>
+            <p class="livro__descricao">O clássico de Machado de Assis sobre memória, ciúme e a dúvida que atravessa gerações de leitores.</p>
+            <a class="botao botao--card" href="#contatos" aria-label="Saiba mais sobre Dom Casmurro">Saiba mais</a>
+          </article>
+
+          <article class="livro">
+            <h3 class="livro__nome">Fundamentos de Programação</h3>
+            <img class="livro__capa" src="assets/imagens/livro-2.svg" alt="Capa ilustrativa de Fundamentos de Programação" width="300" height="420">
+            <p class="livro__categoria">Tecnologia</p>
+            <p class="livro__descricao">Lógica, algoritmos e primeiros passos em código, com exercícios comentados para praticar.</p>
+            <a class="botao botao--card" href="#contatos" aria-label="Saiba mais sobre Fundamentos de Programação">Saiba mais</a>
+          </article>
+
+          <article class="livro">
+            <h3 class="livro__nome">Gestão de Projetos</h3>
+            <img class="livro__capa" src="assets/imagens/livro-3.svg" alt="Capa ilustrativa de Gestão de Projetos" width="300" height="420">
+            <p class="livro__categoria">Gestão e negócios</p>
+            <p class="livro__descricao">Planejamento, prazos e equipes: ferramentas práticas para tirar projetos do papel.</p>
+            <a class="botao botao--card" href="#contatos" aria-label="Saiba mais sobre Gestão de Projetos">Saiba mais</a>
+          </article>
+
+          <article class="livro">
+            <h3 class="livro__nome">Memórias Póstumas de Brás Cubas</h3>
+            <img class="livro__capa" src="assets/imagens/livro-4.svg" alt="Capa ilustrativa de Memórias Póstumas de Brás Cubas" width="300" height="420">
+            <p class="livro__categoria">Literatura brasileira</p>
+            <p class="livro__descricao">O defunto autor narra a própria vida com ironia, em uma das obras mais inovadoras do realismo.</p>
+            <a class="botao botao--card" href="#contatos" aria-label="Saiba mais sobre Memórias Póstumas de Brás Cubas">Saiba mais</a>
+          </article>
+
+          <article class="livro">
+            <h3 class="livro__nome">Design Web na Prática</h3>
+            <img class="livro__capa" src="assets/imagens/livro-5.svg" alt="Capa ilustrativa de Design Web na Prática" width="300" height="420">
+            <p class="livro__categoria">Tecnologia</p>
+            <p class="livro__descricao">HTML, CSS, layout responsivo e acessibilidade explicados com exemplos do dia a dia.</p>
+            <a class="botao botao--card" href="#contatos" aria-label="Saiba mais sobre Design Web na Prática">Saiba mais</a>
+          </article>
+
+          <article class="livro">
+            <h3 class="livro__nome">Psicologia da Aprendizagem</h3>
+            <img class="livro__capa" src="assets/imagens/livro-6.svg" alt="Capa ilustrativa de Psicologia da Aprendizagem" width="300" height="420">
+            <p class="livro__categoria">Educação</p>
+            <p class="livro__descricao">Como aprendemos, o que nos motiva e estratégias para estudar com mais foco e menos esforço.</p>
+            <a class="botao botao--card" href="#contatos" aria-label="Saiba mais sobre Psicologia da Aprendizagem">Saiba mais</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== AS UNIDADES ===================== -->
+    <section class="secao secao--profunda" id="unidades" aria-labelledby="unidades-titulo">
+      <div class="container">
+        <h2 id="unidades-titulo" class="titulo-secao">As unidades</h2>
+
+        <div class="unidades">
+          <article class="unidade">
+            <img class="unidade__imagem" src="assets/imagens/unidade-1.svg" alt="Ilustração do prédio do campus" width="600" height="400">
+            <div class="unidade__texto">
+              <h3 class="unidade__nome">Unidade 1 · Biblioteca Central</h3>
+              <p>Localizada no campus de Taboão da Serra, reúne o acervo físico, salas de estudo
+                individuais e em grupo, computadores para pesquisa e atendimento presencial
+                com bibliotecários.</p>
+              <p class="unidade__info">Segunda a sexta, das 8h às 22h · Sábado, das 8h às 14h</p>
+            </div>
+          </article>
+
+          <article class="unidade">
+            <img class="unidade__imagem" src="assets/imagens/unidade-2.svg" alt="Ilustração de um polo de apoio presencial" width="600" height="400">
+            <div class="unidade__texto">
+              <h3 class="unidade__nome">Unidade 2 · Polos de apoio</h3>
+              <p>Os polos presenciais oferecem um ponto de acesso à biblioteca para estudantes
+                de cursos a distância, com empréstimo de obras de referência e espaço para
+                provas e encontros.</p>
+              <p class="unidade__info">Horário conforme o polo · Consulte pelo portal do aluno</p>
+            </div>
+          </article>
+
+          <article class="unidade">
+            <img class="unidade__imagem" src="assets/imagens/unidade-3.svg" alt="Ilustração de um notebook com um globo na tela" width="600" height="400">
+            <div class="unidade__texto">
+              <h3 class="unidade__nome">Unidade 3 · Biblioteca Virtual</h3>
+              <p>Acesso on-line ao acervo digital pelo AVA, com leitura no navegador, marcações,
+                busca por palavra-chave e indicação de bibliografia por disciplina.</p>
+              <p class="unidade__info">Disponível 24 horas, todos os dias</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATOS ===================== -->
+    <section class="secao secao--clara" id="contatos" aria-labelledby="contatos-titulo">
+      <div class="container contatos">
+        <div class="contatos__texto">
+          <h2 id="contatos-titulo" class="titulo-secao titulo-secao--escuro">Contatos</h2>
+          <p>
+            Precisa de ajuda para encontrar um livro, acessar o acervo digital ou formatar seu
+            trabalho nas normas da ABNT? A equipe da biblioteca responde pelo portal do aluno
+            e também presencialmente na Biblioteca Central.
+          </p>
+          <ul class="contatos__lista">
+            <li><strong>E-mail:</strong> <a href="mailto:biblioteca@unifecaf.com.br">biblioteca@unifecaf.com.br</a></li>
+            <li><strong>Atendimento on-line:</strong> portal do aluno, menu “Biblioteca”</li>
+            <li><strong>Presencial:</strong> Biblioteca Central, campus Taboão da Serra (SP)</li>
+          </ul>
+        </div>
+        <figure class="contatos__figura">
+          <img src="assets/imagens/contato-mapa.svg" alt="Mapa ilustrativo com um marcador de localização" width="500" height="400">
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="rodape">
+    <div class="container rodape__interno">
+      <p>© 2026 Biblioteca Digital UniFECAF · Projeto acadêmico da disciplina Design Web</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
