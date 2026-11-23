@@ -8,12 +8,12 @@
   <title>Biblioteca Digital UniFECAF</title>
   <link rel="icon" href="assets/imagens/livro-1.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fontes/montserrat-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 
   <!-- Biblioteca de ícones SVG: cada <symbol> é reutilizado com <use href="#id"> -->
-  <svg class="icones" aria-hidden="true" focusable="false">
+  <svg class="icones" width="0" height="0" aria-hidden="true" focusable="false">
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
     <symbol id="i-fechar" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
     <symbol id="i-seta" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
@@ -43,14 +43,14 @@
         e o menu fecha sozinho, levando o aluno direto para a seção.
       -->
       <a class="menu__abrir" href="#menu" aria-label="Abrir menu">
-        <svg class="icone" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icone" width="24" height="24" aria-hidden="true"><use href="#i-menu"/></svg>
       </a>
 
       <nav class="menu" id="menu" aria-label="Menu principal">
         <div class="menu__topo">
           <span class="menu__rotulo">Menu</span>
           <a class="menu__fechar" href="#menu-fechado" aria-label="Fechar menu">
-            <svg class="icone" aria-hidden="true"><use href="#i-fechar"/></svg>
+            <svg class="icone" width="24" height="24" aria-hidden="true"><use href="#i-fechar"/></svg>
           </a>
         </div>
 
@@ -63,7 +63,7 @@
 
         <a class="botao botao--destaque menu__cta" href="#livros">
           Ver acervo
-          <svg class="icone icone--p" aria-hidden="true"><use href="#i-seta"/></svg>
+          <svg class="icone icone--p" width="18" height="18" aria-hidden="true"><use href="#i-seta"/></svg>
         </a>
       </nav>
     </div>
@@ -84,14 +84,14 @@
         <div class="hero__acoes">
           <a class="botao botao--destaque botao--grande" href="#livros">
             Explorar livros
-            <svg class="icone icone--p" aria-hidden="true"><use href="#i-seta"/></svg>
+            <svg class="icone icone--p" width="18" height="18" aria-hidden="true"><use href="#i-seta"/></svg>
           </a>
           <a class="botao botao--contorno botao--grande" href="#sobre">Conhecer a biblioteca</a>
         </div>
         <ul class="hero__fatos">
-          <li><svg class="icone icone--p" aria-hidden="true"><use href="#i-check"/></svg>Acesso 24 horas</li>
-          <li><svg class="icone icone--p" aria-hidden="true"><use href="#i-check"/></svg>Leitura no celular</li>
-          <li><svg class="icone icone--p" aria-hidden="true"><use href="#i-check"/></svg>Bibliografia dos seus cursos</li>
+          <li><svg class="icone icone--p" width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg>Acesso 24 horas</li>
+          <li><svg class="icone icone--p" width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg>Leitura no celular</li>
+          <li><svg class="icone icone--p" width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg>Bibliografia dos seus cursos</li>
         </ul>
       </div>
     </section>
@@ -244,7 +244,7 @@
                 individuais e em grupo, computadores para pesquisa e atendimento presencial
                 com bibliotecários.</p>
               <p class="unidade__info">
-                <svg class="icone icone--p" aria-hidden="true"><use href="#i-relogio"/></svg>
+                <svg class="icone icone--p" width="18" height="18" aria-hidden="true"><use href="#i-relogio"/></svg>
                 Segunda a sexta, das 8h às 22h · Sábado, das 8h às 14h
               </p>
             </div>
@@ -258,7 +258,7 @@
                 de cursos a distância, com empréstimo de obras de referência e espaço para
                 provas e encontros.</p>
               <p class="unidade__info">
-                <svg class="icone icone--p" aria-hidden="true"><use href="#i-relogio"/></svg>
+                <svg class="icone icone--p" width="18" height="18" aria-hidden="true"><use href="#i-relogio"/></svg>
                 Horário conforme o polo · Consulte pelo portal do aluno
               </p>
             </div>
@@ -271,7 +271,7 @@
               <p>Acesso on-line ao acervo digital pelo AVA, com leitura no navegador, marcações,
                 busca por palavra-chave e indicação de bibliografia por disciplina.</p>
               <p class="unidade__info">
-                <svg class="icone icone--p" aria-hidden="true"><use href="#i-relogio"/></svg>
+                <svg class="icone icone--p" width="18" height="18" aria-hidden="true"><use href="#i-relogio"/></svg>
                 Disponível 24 horas, todos os dias
               </p>
             </div>
@@ -292,15 +292,15 @@
           </p>
           <ul class="contatos__lista">
             <li class="contato">
-              <span class="contato__icone"><svg class="icone" aria-hidden="true"><use href="#i-email"/></svg></span>
+              <span class="contato__icone"><svg class="icone" width="24" height="24" aria-hidden="true"><use href="#i-email"/></svg></span>
               <span><strong>E-mail</strong><a href="mailto:biblioteca@unifecaf.com.br">biblioteca@unifecaf.com.br</a></span>
             </li>
             <li class="contato">
-              <span class="contato__icone"><svg class="icone" aria-hidden="true"><use href="#i-conversa"/></svg></span>
+              <span class="contato__icone"><svg class="icone" width="24" height="24" aria-hidden="true"><use href="#i-conversa"/></svg></span>
               <span><strong>Atendimento on-line</strong>Portal do aluno, menu “Biblioteca”</span>
             </li>
             <li class="contato">
-              <span class="contato__icone"><svg class="icone" aria-hidden="true"><use href="#i-local"/></svg></span>
+              <span class="contato__icone"><svg class="icone" width="24" height="24" aria-hidden="true"><use href="#i-local"/></svg></span>
               <span><strong>Presencial</strong>Biblioteca Central, campus Taboão da Serra (SP)</span>
             </li>
           </ul>
@@ -331,7 +331,7 @@
       </nav>
       <a class="rodape__topo" href="#inicio">
         Voltar ao topo
-        <svg class="icone icone--p" aria-hidden="true"><use href="#i-topo"/></svg>
+        <svg class="icone icone--p" width="18" height="18" aria-hidden="true"><use href="#i-topo"/></svg>
       </a>
     </div>
   </footer>
