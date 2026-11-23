@@ -5,7 +5,7 @@ O site transforma o protótipo de baixa fidelidade fornecido pela instituição 
 
 - **Site publicado:** https://gustav0325.github.io/biblioteca-unifecaf/
 - **Repositório:** https://github.com/gustav0325/biblioteca-unifecaf
-- **Vídeo pitch:** COLE_AQUI_O_LINK_DO_YOUTUBE
+- **Vídeo pitch:** https://youtu.be/vBRxNInK_MM
 
 ## Estrutura
 
